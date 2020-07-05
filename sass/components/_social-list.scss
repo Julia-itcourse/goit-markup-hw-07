@@ -33,8 +33,10 @@
 .social-link:hover {
   color: $secondary-text-color;
   background-color: $accent-color;
+
   .social-link:hover .social-icon {
     fill: $primary-background-color;
+    transition: $primary-transition;
   }
 
   .link-icon {
