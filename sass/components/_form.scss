@@ -16,12 +16,12 @@ textarea {
   width: 100%;
   padding: 12px 42px;
   color: $title-text-color;
-}
-.input-field--no-icon {
-  padding: 12px;
-  color: $title-text-color;
-}
 
+  &--no-icon {
+    padding: 12px;
+    color: $title-text-color;
+  }
+}
 .close-button {
   display: flex;
   align-items: center;
@@ -36,9 +36,10 @@ textarea {
   border-radius: 50%;
   border: 1px solid $close-button-border;
   background-color: $primary-background-color;
-}
-.close-button:hover .form-close-icon {
-  fill: $accent-color;
+
+  &:hover .form-close-icon {
+    fill: $accent-color;
+  }
 }
 .form-close-icon {
   width: 11px;
@@ -100,24 +101,25 @@ textarea {
   -moz-appearance: none;
   appearance: none;
   position: absolute;
-}
-.checkbox-icon {
-  display: inline-block;
-  vertical-align: middle;
-  width: 16px;
-  height: 15px;
-  background-image: url(../images/checkbox-icon-empty.svg);
-  margin-right: 10px;
-}
-.checkbox:checked + .checkbox-icon {
-  width: 16px;
-  height: 15px;
-  border-color: $accent-color;
-  background-color: $accent-color;
-  background-image: url(../images/full-check.svg);
-  background-size: contain;
-  background-origin: border-box;
-  border-radius: 2px;
+
+  &-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/checkbox-icon-empty.svg);
+    margin-right: 10px;
+  }
+  &:checked + .checkbox-icon {
+    width: 16px;
+    height: 15px;
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-image: url(../images/full-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-radius: 2px;
+  }
 }
 
 .form {
@@ -130,11 +132,10 @@ textarea {
 
 .form-button {
   width: 200px;
-}
-
-.form-button:hover {
-  background-color: $form-button-hover;
-  color: $primary-background-color;
+  &:hover {
+    background-color: $form-button-hover;
+    color: $primary-background-color;
+  }
 }
 
 .conditions {

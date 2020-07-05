@@ -18,6 +18,13 @@
   height: 90px;
 
   transition: $primary-transition;
+
+  &:hover {
+    border: 1px solid $accent-color;
+  }
+  &:hover .client-icon {
+    fill: $accent-color;
+  }
 }
 .client-icon {
   fill: $icon-color;
@@ -46,10 +53,4 @@
 #logo-6 {
   width: 89px;
   height: 46px;
-}
-.client-link:hover {
-  border: 1px solid $accent-color;
-}
-.client-link:hover .client-icon {
-  fill: $accent-color;
 }

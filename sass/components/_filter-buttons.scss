@@ -1,12 +1,12 @@
 .filter {
   margin-top: 0;
   margin-bottom: 34px;
-}
 
-.filter .list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  & .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .button {
@@ -26,13 +26,14 @@
   cursor: pointer;
 
   transition: $primary-transition;
-}
-.button:hover {
-  color: $secondary-text-color;
-  background-color: $accent-color;
-}
 
-.button:focus {
-  color: $secondary-text-color;
-  background-color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $secondary-text-color;
+    background-color: $accent-color;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+  }
 }

@@ -9,15 +9,15 @@
   letter-spacing: 0.03em;
 
   transition: $primary-transition;
+
+  &:hover {
+    color: $accent-color;
+  }
 }
 .footer .logo {
   color: $secondary-text-color;
   transition: $primary-transition;
 }
 .logo > span {
-  color: $accent-color;
-}
-
-.logo:hover {
   color: $accent-color;
 }

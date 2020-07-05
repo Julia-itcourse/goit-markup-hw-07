@@ -1,44 +1,62 @@
 .footer {
   background-color: $footer-background-color;
-}
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
 
-  justify-content: space-between;
-  align-items: baseline;
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
 
-  padding-top: 60px;
-  padding-bottom: 60px;
+    justify-content: space-between;
+    align-items: baseline;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    & .logo {
+      margin-bottom: 20px;
+    }
+  }
+  &-form {
+    display: flex;
+  }
+
+  & .input-field {
+    margin-right: 12px;
+    width: 100%;
+
+    padding: 12px;
+    border: 1px solid $footer-form-input-border;
+
+    border-radius: 4px;
+    background-color: inherit;
+    color: $secondary-text-color;
+  }
 }
-.footer-form {
-  display: flex;
-}
+
 .footer-element.item:not(:last-child) {
   width: calc((50% - 45px) / 2);
 }
 .footer-element:last-child {
   width: calc(50% - 15px);
 }
-.footer-content .logo {
-  margin-bottom: 20px;
-}
+
 address {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-}
-address .physical-address {
-  color: $secondary-text-color;
-  margin-bottom: 9px;
+
+  & .physical-address {
+    color: $secondary-text-color;
+    margin-bottom: 9px;
+  }
 }
 .footer__contact-link {
   transition: $primary-transition;
-}
-.footer__contact-link:hover {
-  color: $accent-color;
+
+  &:hover {
+    color: $accent-color;
+  }
 }
 
 .join-us {
@@ -68,10 +86,11 @@ address .physical-address {
   background-color: $footer-secondary-bakground-color;
 
   transition: $primary-transition;
-}
-.footer .link:hover {
-  color: $secondary-text-color;
-  background-color: $accent-color;
+
+  &:hover {
+    color: $secondary-text-color;
+    background-color: $accent-color;
+  }
 }
 .link-icon {
   width: 20px;
@@ -134,16 +153,4 @@ address .physical-address {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer .input-field {
-  margin-right: 12px;
-  width: 100%;
-
-  padding: 12px;
-  border: 1px solid $footer-form-input-border;
-
-  border-radius: 4px;
-  background-color: inherit;
-  color: $secondary-text-color;
 }

@@ -30,11 +30,8 @@
   position: relative;
 
   width: calc((100% - 30px * 2) / 3);
-}
 
-.what-we-do__element:not(:last-child) {
-  margin-right: 30px;
-}
-.what-we-do .title {
-  text-align: center;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }

@@ -17,11 +17,12 @@
   transition: $primary-transition;
 
   text-align: center;
-}
-.primary-button:hover {
-  color: $accent-color;
-  background-color: $secondary-text-color;
-  border: 1px solid $secondary-text-color;
+
+  &:hover {
+    color: $accent-color;
+    background-color: $secondary-text-color;
+    border: 1px solid $secondary-text-color;
+  }
 }
 button:active,
 button:focus {

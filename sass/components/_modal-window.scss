@@ -13,18 +13,19 @@
   letter-spacing: 0.01em;
   padding: 40px;
   box-shadow: $modal-box-shadow;
-}
 
-.is-hidden .modal {
-  transform: translate(-50%, 100%);
-}
-.modal-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  .is-hidden & {
+    transform: translate(-50%, 100%);
+  }
 
-  color: $title-text-color;
+  &-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+
+    color: $title-text-color;
+  }
 }
