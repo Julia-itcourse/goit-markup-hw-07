@@ -1,5 +1,5 @@
 .logo {
-  color: var(--title-text-color);
+  color: $title-text-color;
   text-decoration: none;
 
   font-family: Raleway;
@@ -8,16 +8,16 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
 
-  transition: var(--primary-transition);
+  transition: $primary-transition;
 }
 .footer .logo {
-  color: var(--secondary-text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $secondary-text-color;
+  transition: $primary-transition;
 }
 .logo > span {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .logo:hover {
-  color: var(--accent-color);
+  color: $accent-color;
 }
